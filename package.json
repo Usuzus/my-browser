@@ -1,0 +1,31 @@
+{
+  "name": "abdelrahman-browser",
+  "version": "1.0.0",
+  "description": "My custom Chromium browser",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Abdelrahman",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^45.0.0",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.abdelrahman.browser",
+    "productName": "Abdelrahman Browser",
+    "win": {
+      "target": "nsis-web"
+    },
+    "nsisWeb": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "publish": {
+        "provider": "generic",
+        "url": "http://mysuccessfulserver.ddns.net/updates/"
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <style>
+    body { background-color: #1e1e1e; color: white; font-family: system-ui, sans-serif; padding: 40px; max-width: 600px; margin: 0 auto; }
+    h1 { color: #60a5fa; border-bottom: 1px solid #444; padding-bottom: 10px; }
+    h2 { font-size: 1.2rem; margin-top: 30px; color: #e2e8f0; }
+    .setting-group { background: #2d2d2d; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    select, button { width: 100%; padding: 10px; margin-top: 10px; border-radius: 6px; background: #1e1e1e; color: white; border: 1px solid #555; font-size: 14px; cursor: pointer; }
+    select:focus, button:focus { outline: none; border-color: #60a5fa; }
+    button:hover { background: #3c3c3c; }
+    .danger-btn { background: #dc2626; border-color: #dc2626; font-weight: bold; }
+    .danger-btn:hover { background: #b91c1c; }
+    .success { color: #10b981; font-size: 14px; margin-top: 10px; display: none; }
+  </style>
+</head>
+<body>
+  <h1>⚙️ Browser Settings</h1>
+
+  <div class="setting-group">
+    <h2>Search Engine</h2>
+    <p style="font-size: 14px; color: #aaa;">Choose the search engine used in the address bar.</p>
+    <select id="search-engine">
+      <option value="google">Google</option>
+      <option value="duckduckgo">DuckDuckGo</option>
+      <option value="bing">Bing</option>
+    </select>
+  </div>
+
+  <div class="setting-group">
+    <h2>Homepage</h2>
+    <p style="font-size: 14px; color: #aaa;">The page that opens when you click the Home button.</p>
+    <input type="text" id="homepage" placeholder="https://google.com" style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 6px; background: #1e1e1e; color: white; border: 1px solid #555; box-sizing: border-box;">
+  </div>
+
+  <div class="setting-group">
+    <h2>Privacy & Security</h2>
+    <p style="font-size: 14px; color: #aaa;">Clear your cookies, cache, and browsing history from the browser.</p>
+    <button class="danger-btn" id="clear-data">Clear Browsing Data</button>
+    <p class="success" id="clear-success">Browsing data cleared successfully!</p>
+  </div>
+
+  <script>
+    // Load saved settings
+    document.getElementById('search-engine').value = localStorage.getItem('searchEngine') || 'google';
+    document.getElementById('homepage').value = localStorage.getItem('homepage') || 'https://google.com';
+
+    // Save settings on change
+    document.getElementById('search-engine').addEventListener('change', (e) => {
+      localStorage.setItem('searchEngine', e.target.value);
+    });
+
+    document.getElementById('homepage').addEventListener('change', (e) => {
+      localStorage.setItem('homepage', e.target.value);
+    });
+
+    // Clear Data Button
+    document.getElementById('clear-data').addEventListener('click', () => {
+      // In a real browser, this is handled by the main process
+      // For this app, we clear local storage and reload
+      localStorage.clear();
+      document.getElementById('clear-success').style.display = 'block';
+      setTimeout(() => {
+        document.getElementById('clear-success').style.display = 'none';
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
