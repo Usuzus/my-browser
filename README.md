@@ -2,7 +2,7 @@
 
 A lightweight, custom desktop web browser built with **Electron**, HTML, CSS, and JavaScript. Designed for fast browsing and seamless access to the **Abdelrahman HomeLab** ecosystem.
 
-🌐 **Official HomeLab Dashboard:** [https://dpdns.org](https://dpdns.org)
+🌐 **Official HomeLab Dashboard:** [https://dpdns.org](https://abdelrahmanhomelabs.dpdns.org)
 
 ---
 
@@ -11,7 +11,7 @@ A lightweight, custom desktop web browser built with **Electron**, HTML, CSS, an
 - **Custom Desktop Experience:** Built on Electron with a clean, responsive interface (`index.html` & `renderer.js`).
 - **Built-in Settings:** Customize browser behavior and preferences directly from the dedicated settings view (`settings.html`).
 - **Windows Installer:** Includes a ready-to-run Windows installer (`Abdelrahman Browser Web Setup 1.0.0.exe`).
-- **HomeLab Ecosystem Ready:** Built to work alongside self-hosted tools on [Abdelrahman HomeLab](https://dpdns.org), including HomeLab AI, HomeLab Drive, HomeLab Studio, and HomeLab IDE.
+- **HomeLab Ecosystem Ready:** Built to work alongside self-hosted tools on [Abdelrahman HomeLab](https://abdelrahmanhomelabs.dpdns.org), including HomeLab AI, HomeLab Drive, HomeLab Studio, and HomeLab IDE.
 
 ---
 
@@ -53,4 +53,4 @@ my-browser/
 ## Author
 
 Built by **Abdelrahman Ziad Mahmoud Rady**  
-Explore more self-hosted projects and tools at **[abdelrahmanhomelabs.dpdns.org](https://dpdns.org)**.
+Explore more self-hosted projects and tools at **[abdelrahmanhomelabs.dpdns.org](https://abdelrahmanhomelabs.dpdns.org)**.
