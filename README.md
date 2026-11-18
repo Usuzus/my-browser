@@ -34,7 +34,7 @@ my-browser/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/Usuzus/my-browser
    cd my-browser
    ```
 
