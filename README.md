@@ -2,7 +2,7 @@
 
 A lightweight, custom desktop web browser built with **Electron**, HTML, CSS, and JavaScript. Designed for fast browsing and seamless access to the **Abdelrahman HomeLab** ecosystem.
 
-🌐 **Official HomeLab Dashboard:** [https://dpdns.org](https://abdelrahmanhomelabs.dpdns.org)
+🌐 **Official HomeLab Dashboard:** [https://abdelrahmanhomelabs.dpdns.org](https://abdelrahmanhomelabs.dpdns.org)
 
 ---
 
